@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_traffic_manager",
+  "Description": "LPU for Traffic Manager",
+  "Actions": [
+    "Microsoft.Network/trafficmanagerprofiles/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

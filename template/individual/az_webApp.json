@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_app",
+  "Description": "LPU for Application, Covers Functions and Sites",
+  "Actions": [
+    "Microsoft.Web/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+     "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

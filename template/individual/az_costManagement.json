@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_cost_management",
+  "Description": "LPU for Cost Management and Billing",
+  "Actions": [
+    "Microsoft.Billing/*/read",
+    "Microsoft.Consumption/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_virtual_network",
+  "Description": "LPU for Virtual Network",
+  "Actions": [
+    "Microsoft.Network/publicIPAddresses/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

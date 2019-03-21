@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_network_watcher",
+  "Description": "LPU for Network Watcher",
+  "Actions": [
+    "Microsoft.Network/networkWatchers/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

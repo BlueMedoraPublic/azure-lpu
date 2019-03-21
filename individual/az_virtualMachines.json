@@ -1,0 +1,15 @@
+{
+  "Name": "lpu_virtual_machines",
+  "Description": "LPU for Virtual Machines",
+  "Actions": [
+    "Microsoft.Compute/virtualMachines/*/read",
+    "Microsoft.Network/publicIPAddresses/*/read",
+    "Microsoft.Network/networkInterfaces/*/read",
+    "Microsoft.Network/virtualNetworks/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

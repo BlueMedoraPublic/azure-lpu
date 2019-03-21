@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_search",
+  "Description": "LPU for Search",
+  "Actions": [
+    "Microsoft.Search/searchServices/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

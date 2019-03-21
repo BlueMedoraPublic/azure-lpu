@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_batch",
+  "Description": "LPU for Batch",
+  "Actions": [
+    "Microsoft.Batch/batchAccounts/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

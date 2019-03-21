@@ -1,0 +1,41 @@
+{
+  "Name": "devops_master_lpu",
+  "Description": "Master LPU for Azure",
+  "Actions": [
+    "Microsoft.Batch/batchAccounts/*/read",
+    "Microsoft.ContainerInstance/containerGroups/*/read",
+    "Microsoft.ContainerService/managedClusters/*/read",
+    "Microsoft.Billing/*/read",
+    "Microsoft.Consumption/*/read",
+    "Microsoft.Sql/servers/*/read",
+    "Microsoft.Sql/servers/databases/providers/Microsoft.Insights/*/read",
+    "Microsoft.DBforMySQL/*/read",
+    "Microsoft.DBforPostgreSQL/*/read",
+    "Microsoft.Storage/*/read",
+    "Microsoft.EventHub/*/read",
+    "Microsoft.HDInsight/clusters/*/read",
+    "Microsoft.Network/loadBalancers/*/read",
+    "Microsoft.Network/publicIPAddresses/*/read",
+    "Microsoft.Network/networkInterfaces/*/read",
+    "Microsoft.Network/networkWatchers/*/read",
+    "Microsoft.NotificationHubs/namespaces/*/read",
+    "Microsoft.Logic/workflows/*/read",
+    "Microsoft.Cache/*/read",
+    "Microsoft.Resources/*/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Search/searchServices/*/read",
+    "Microsoft.ClassicStorage/*/read",
+    "Microsoft.Storage/*/read",
+    "Microsoft.StreamAnalytics/streamingjobs/*/read",
+    "Microsoft.Network/trafficmanagerprofiles/*/read",
+    "Microsoft.Compute/virtualMachines/*/read",
+    "Microsoft.Network/virtualNetworks/*/read",
+    "Microsoft.Compute/virtualMachineScaleSets/*/read",
+    "Microsoft.Web/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

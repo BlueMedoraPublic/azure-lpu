@@ -1,0 +1,6 @@
+test.txt
+output
+output/*
+oldfiles
+oldfiles/*
+azure-set-subscription.sh

@@ -1,0 +1,13 @@
+{
+  "Name": "lpu_storage",
+  "Description": "LPU for Storage (both classic and standard)",
+  "Actions": [
+    "Microsoft.ClassicStorage/*/read",
+    "Microsoft.Storage/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "lpu_notification_hubs",
+  "Description": "LPU for NotificationHubs",
+  "Actions": [
+    "Microsoft.NotificationHubs/namespaces/*/read",
+    "Microsoft.Insights/metrics/*/read",
+    "Microsoft.Authorization/*/read"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/SUBSCRIPTION_ID"
+  ]
+}
