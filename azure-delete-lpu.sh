@@ -54,7 +54,11 @@ for f in $FILES
 do
   echo "Processing $f file..."
   REPLACETEXT="s/SUBSCRIPTION_ID/$SubscriptionID/g"
-  sed -i $REPLACETEXT $f
+  if [ "$(uname)" == "Darwin" ]; then
+    sed -i '' $REPLACETEXT $f
+  elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    sed -i $REPLACETEXT $f
+  fi
   # take action on each file. $f store current file name
   role_name=`cat $f | jq -r '.Name'`
   az ad sp delete --id http://$LPU_PREFIX$role_name

@@ -76,7 +76,11 @@ do
   echo "\n"
   echo "Processing $f file..."
   REPLACETEXT="s/SUBSCRIPTION_ID/$SubscriptionID/g"
-  sed -i $REPLACETEXT $f
+  if [ "$(uname)" == "Darwin" ]; then
+    sed -i '' $REPLACETEXT $f
+  elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    sed -i $REPLACETEXT $f
+  fi
   # take action on each file. $f store current file name
   az role definition create --role-definition $f
   role_name=`cat $f | jq -r '.Name'`
