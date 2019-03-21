@@ -54,7 +54,7 @@ for f in $FILES
 do
   echo "Processing $f file..."
   REPLACETEXT="s/SUBSCRIPTION_ID/$SubscriptionID/g"
-  sed -i '' $REPLACETEXT $f
+  sed -i $REPLACETEXT $f
   # take action on each file. $f store current file name
   role_name=`cat $f | jq -r '.Name'`
   az ad sp delete --id http://$LPU_PREFIX$role_name
