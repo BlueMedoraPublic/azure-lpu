@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_storage",
+  "Name": "PREFIX_lpu_storage",
   "Description": "LPU for Storage (both classic and standard)",
   "Actions": [
     "Microsoft.ClassicStorage/*/read",

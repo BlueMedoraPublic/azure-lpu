@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_search",
+  "Name": "PREFIX_lpu_search",
   "Description": "LPU for Search",
   "Actions": [
     "Microsoft.Search/searchServices/*/read",

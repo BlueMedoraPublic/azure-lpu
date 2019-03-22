@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_eventhub",
+  "Name": "PREFIX_lpu_eventhub",
   "Description": "LPU for EventHub",
   "Actions": [
     "Microsoft.EventHub/*/read",

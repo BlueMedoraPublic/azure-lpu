@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_virtual_machines",
+  "Name": "PREFIX_lpu_virtual_machines",
   "Description": "LPU for Virtual Machines",
   "Actions": [
     "Microsoft.Compute/virtualMachines/*/read",

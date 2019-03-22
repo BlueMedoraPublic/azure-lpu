@@ -70,22 +70,35 @@ case $OPT in
         ;;
 esac
 
+rm -rf master/*
+rm -rf individual/*
+cp  -a template/. .
+
 FILES="$LPU_FOLDER"/*
 for f in $FILES
 do
   echo "\n"
   echo "Processing $f file..."
+  filename=$(basename -- "$f")
+  echo $filename
   REPLACETEXT="s/SUBSCRIPTION_ID/$SubscriptionID/g"
+  REPLACEPREFIX="s/ROLEPREFIX/$LPU_PREFIX/g"
   if [ "$(uname)" == "Darwin" ]; then
     sed -i '' $REPLACETEXT $f
+    sed -i '' $REPLACEPREFIX $f
   elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     sed -i $REPLACETEXT $f
+    sed -i $REPLACEPREFIX $f
+  else
+    echo "unsupported os"
+    exit 0
   fi
   # take action on each file. $f store current file name
   az role definition create --role-definition $f
   role_name=`cat $f | jq -r '.Name'`
-  LPU_NAME="$LPU_PREFIX$role_name"
-  echo $LPU_NAME
+  echo "RoleName->$role_name"
+  LPU_NAME="$role_name"
+  echo "LPUNAME->$LPU_NAME"
   az ad sp create-for-rbac -n $LPU_NAME --password $passvalue --role $role_name >> output/"$LPU_FOLDER".txt
   echo "\n"
 done

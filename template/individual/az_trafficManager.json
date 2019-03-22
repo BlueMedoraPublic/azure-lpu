@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_traffic_manager",
+  "Name": "PREFIX_lpu_traffic_manager",
   "Description": "LPU for Traffic Manager",
   "Actions": [
     "Microsoft.Network/trafficmanagerprofiles/*/read",

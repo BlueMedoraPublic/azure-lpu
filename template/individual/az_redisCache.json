@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_redis",
+  "Name": "PREFIX_lpu_redis",
   "Description": "LPU for Redis",
   "Actions": [
     "Microsoft.Cache/*/read",

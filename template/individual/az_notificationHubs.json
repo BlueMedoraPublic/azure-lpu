@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_notification_hubs",
+  "Name": "PREFIX_lpu_notification_hubs",
   "Description": "LPU for NotificationHubs",
   "Actions": [
     "Microsoft.NotificationHubs/namespaces/*/read",

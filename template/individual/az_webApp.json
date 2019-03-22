@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_app",
+  "Name": "PREFIX_lpu_app",
   "Description": "LPU for Application, Covers Functions and Sites",
   "Actions": [
     "Microsoft.Web/*/read",
