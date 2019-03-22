@@ -30,13 +30,14 @@ az login
 #### Credentials will be create in Output file
 ```angularjs
 output/master.txt
+output/individual.txt
 ```
 
 
 #### Input information 
  - SubscriptionID
- - Random Prefix 
- - Master LPU or individual LPU
+ - Random Prefix (make sure you are providing the same prefix used in create script)
+ - Choose Master LPU or individual LPU
  
 To Destory
 ```angularjs
