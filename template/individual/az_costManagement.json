@@ -1,5 +1,5 @@
 {
-  "Name": "PREFIX_lpu_cost_management",
+  "Name": "ROLEPREFIX_lpu_cost_management",
   "Description": "LPU for Cost Management and Billing",
   "Actions": [
     "Microsoft.Billing/*/read",

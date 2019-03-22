@@ -1,5 +1,5 @@
 {
-  "Name": "PREFIX_lpu_sql_servers",
+  "Name": "ROLEPREFIX_lpu_sql_servers",
   "Description": "LPU for SQL Servers",
   "Actions": [
     "Microsoft.Sql/servers/*/read",

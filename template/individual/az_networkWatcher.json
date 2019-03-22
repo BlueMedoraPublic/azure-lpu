@@ -1,5 +1,5 @@
 {
-  "Name": "PREFIX_lpu_network_watcher",
+  "Name": " ROLEPREFIX_lpu_network_watcher",
   "Description": "LPU for Network Watcher",
   "Actions": [
     "Microsoft.Network/networkWatchers/*/read",

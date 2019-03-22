@@ -1,5 +1,5 @@
 {
-  "Name": "PREFIX_lpu_container_instances",
+  "Name": "ROLEPREFIX_lpu_container_instances",
   "Description": "LPU for Container Instances",
   "Actions": [
     "Microsoft.ContainerInstance/containerGroups/*/read",

@@ -1,5 +1,5 @@
 {
-  "Name": "PREFIX_lpu_virtual_network",
+  "Name": "ROLEPREFIX_lpu_virtual_network",
   "Description": "LPU for Virtual Network",
   "Actions": [
     "Microsoft.Network/publicIPAddresses/*/read",

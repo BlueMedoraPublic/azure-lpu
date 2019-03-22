@@ -1,5 +1,5 @@
 {
-  "Name": "PREFIX_lpu_stream_analytics",
+  "Name": "ROLEPREFIX_lpu_stream_analytics",
   "Description": "LPU for Microsoft Azure Stream Analytics",
   "Actions": [
     "Microsoft.StreamAnalytics/streamingjobs/*/read",
