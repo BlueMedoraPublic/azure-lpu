@@ -1,5 +1,5 @@
 {
-  "Name": "devops_master_lpu",
+  "Name": "ROLEPREFIX_master_lpu_role",
   "Description": "Master LPU for Azure",
   "Actions": [
     "Microsoft.Batch/batchAccounts/*/read",

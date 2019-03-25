@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_container_service",
+  "Name": "ROLEPREFIX_lpu_container_service",
   "Description": "LPU for Container Service",
   "Actions": [
     "Microsoft.ContainerService/managedClusters/*/read",

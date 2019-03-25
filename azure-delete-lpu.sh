@@ -49,19 +49,27 @@ case $OPT in
         ;;
 esac
 
+rm -rf master/*
+rm -rf individual/*
+cp  -a template/. .
+
+
 FILES="$LPU_FOLDER"/*
 for f in $FILES
 do
   echo "Processing $f file..."
   REPLACETEXT="s/SUBSCRIPTION_ID/$SubscriptionID/g"
+  REPLACEPREFIX="s/ROLEPREFIX/$LPU_PREFIX/g"
   if [ "$(uname)" == "Darwin" ]; then
     sed -i '' $REPLACETEXT $f
+    sed -i '' $REPLACEPREFIX $f
   elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     sed -i $REPLACETEXT $f
+    sed -i $REPLACEPREFIX $f
   fi
   # take action on each file. $f store current file name
   role_name=`cat $f | jq -r '.Name'`
-  az ad sp delete --id http://$LPU_PREFIX$role_name
+  az ad sp delete --id http://$role_name
   echo $role_name
   az role definition delete --name $role_name
 done

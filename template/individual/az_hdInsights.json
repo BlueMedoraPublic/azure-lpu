@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_hdinsight",
+  "Name": "ROLEPREFIX_lpu_hdinsight",
   "Description": "LPU for HDInsight",
   "Actions": [
     "Microsoft.HDInsight/clusters/*/read",

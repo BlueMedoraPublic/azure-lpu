@@ -4,3 +4,8 @@ output/*
 oldfiles
 oldfiles/*
 azure-set-subscription.sh
+individual
+individual/*
+master
+master/*
+test.sh

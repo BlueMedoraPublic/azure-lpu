@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_resourcegroup",
+  "Name": "ROLEPREFIX_lpu_resourcegroup",
   "Description": "LPU for ResourceGroups",
   "Actions": [
     "Microsoft.Resources/*/read",

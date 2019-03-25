@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_logic_apps",
+  "Name": "ROLEPREFIX_lpu_logic_apps",
   "Description": "LPU for Logic Apps",
   "Actions": [
     "Microsoft.Logic/workflows/*/read",

@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_load_balancers",
+  "Name": "ROLEPREFIX_lpu_load_balancers",
   "Description": "LPU for Load Balancers",
   "Actions": [
     "Microsoft.Network/loadBalancers/*/read",

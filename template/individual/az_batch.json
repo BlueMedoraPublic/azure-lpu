@@ -1,5 +1,5 @@
 {
-  "Name": "lpu_batch",
+  "Name": "ROLEPREFIX_lpu_batch",
   "Description": "LPU for Batch",
   "Actions": [
     "Microsoft.Batch/batchAccounts/*/read",
