@@ -21,14 +21,12 @@ esac
 echo "Enter the random prefix for lpu's"
 read LPU_PREFIX
 
-if [ -z "LPU_PREFIX" ]
+if [ -z "$LPU_PREFIX" ]
 then
       echo "\LPU_PREFIX is empty. Set some value"
       exit 0
 fi
 
-appendvalue="_"
-LPU_PREFIX="$LPU_PREFIX$appendvalue"
 
 LPU_FOLDER=master
 
@@ -69,7 +67,7 @@ do
   fi
   # take action on each file. $f store current file name
   role_name=`cat $f | jq -r '.Name'`
-  az ad sp delete --id http://$role_name
+  az ad sp delete --id http://$role_name --subscription $SubscriptionID
   echo $role_name
-  az role definition delete --name $role_name
+  az role definition delete --name $role_name --subscription $SubscriptionID
 done
