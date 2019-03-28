@@ -95,9 +95,10 @@ do
   # take action on each file. $f store current file name
   az role definition create --role-definition $f --subscription $SubscriptionID
   role_name=`cat $f | jq -r '.Name'`
-  echo "RoleName->$role_name"
+  echo "Role created -> $role_name"
+  sleep 3
   LPU_NAME="$role_name"
-  echo "LPUNAME->$LPU_NAME"
+  echo "lpu user name  -> $LPU_NAME"
   az ad sp create-for-rbac -n $LPU_NAME --password $passvalue --role $role_name --subscription $SubscriptionID >> output/"$LPU_FOLDER".txt
   echo "\n"
 done
