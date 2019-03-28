@@ -49,8 +49,7 @@ else
     fi
 fi
 
-appendvalue="_"
-LPU_PREFIX="$LPU_PREFIX$appendvalue"
+
 
 LPU_FOLDER=none
 

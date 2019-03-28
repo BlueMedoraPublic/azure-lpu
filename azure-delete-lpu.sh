@@ -21,14 +21,12 @@ esac
 echo "Enter the random prefix for lpu's"
 read LPU_PREFIX
 
-if [ -z "LPU_PREFIX" ]
+if [ -z "$LPU_PREFIX" ]
 then
       echo "\LPU_PREFIX is empty. Set some value"
       exit 0
 fi
 
-appendvalue="_"
-LPU_PREFIX="$LPU_PREFIX$appendvalue"
 
 LPU_FOLDER=master
 
