@@ -69,7 +69,7 @@ do
   fi
   # take action on each file. $f store current file name
   role_name=`cat $f | jq -r '.Name'`
-  az ad sp delete --id http://$role_name
+  az ad sp delete --id http://$role_name --subscription $SubscriptionID
   echo $role_name
-  az role definition delete --name $role_name
+  az role definition delete --name $role_name --subscription $SubscriptionID
 done
